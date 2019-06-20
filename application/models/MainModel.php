@@ -7,7 +7,7 @@ class MainModel extends CI_Model {
     public function insert($tb, $values)
     {
         $this->db->insert($tb, $values);
-        
+        return $this->db->affected_rows();
     }
 
     public function insert_batch($tb, $values)
