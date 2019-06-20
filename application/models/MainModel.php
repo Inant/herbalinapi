@@ -18,6 +18,7 @@ class MainModel extends CI_Model {
     public function update($tb, $values, $where)
     {
         $this->db->update($tb, $values, $where);
+        return $this->db->affected_rows();
     }
 
     public function delete($tb, $where)
