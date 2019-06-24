@@ -13,7 +13,6 @@ class Antrian extends REST_Controller
         date_default_timezone_set('Asia/Jakarta');
         $date = date('Y-m-d');
 
-
         $tanggal = $this->get('tanggal');
         if ($tanggal === null) {
             //jika tidak ada parameter tanggal, maka yg ditampilkan antrian hari ini
